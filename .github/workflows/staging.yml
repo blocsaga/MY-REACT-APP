@@ -30,7 +30,3 @@ jobs:
         run: docker run -d -p 3000:80
 
       - run: docker push appxtract/johnreactrepo:staging
-
-      #this is comment so that pull request can find the difference
-      #this is comment so that pull request can find the difference
-
