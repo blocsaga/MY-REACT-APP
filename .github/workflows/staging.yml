@@ -28,3 +28,5 @@ jobs:
 
       - name: run staging image
         run: docker run -d -p 5173:5173 appxtract/johnreactrepo:staging
+
+        # this is just to check ss
