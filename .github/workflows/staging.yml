@@ -2,7 +2,7 @@ name: Staging CI
 
 on:
   pull_request:
-    branches: ["staging"]
+    branches: ["staging/feature"]
     types: ["closed"]
 
 jobs:
@@ -27,6 +27,4 @@ jobs:
         run: docker pull appxtract/johnreactrepo:staging
 
       - name: run staging image
-        run: docker run -d -p 3000:80
-
-      - run: docker push appxtract/johnreactrepo:staging
+        run: docker run -d -p 5173:5173 appxtract/johnreactrepo:staging
